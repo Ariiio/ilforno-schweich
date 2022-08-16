@@ -1,0 +1,340 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(352deg, 77%, 20%);
+}
+
+.header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(352deg, 77%, 39%);
+  padding: 1rem;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.logo {
+  width: 10%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 6rem;
+  }
+}
+
+.link {
+  color: hsl(42deg, 82%, 73%);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  display: none;
+  visibility: hidden;
+  color: hsl(42deg, 82%, 73%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.left {
+  text-align: center;
+}
+
+.header-content {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .header-content {
+    flex: 1;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 1rem;
+}
+
+.right-welcome {
+  position: relative;
+}
+.right-welcome .bg-image {
+  border-radius: 0.5rem;
+}
+.right-welcome .menu {
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  white-space: nowrap;
+  color: white;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sub-container {
+  box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  background-color: hsl(42deg, 82%, 73%);
+  border-radius: 0.5rem;
+  color: hsl(352deg, 77%, 20%);
+  font-weight: 900;
+}
+.sub-container .headline {
+  text-align: center;
+  font-size: 2rem;
+}
+.sub-container .opening-container {
+  display: flex;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+.sub-container .opening-container .right {
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  color: hsl(42deg, 60%, 65%);
+  border: hsl(42deg, 82%, 73%) 2px solid;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+.contact span {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact form a {
+  color: hsl(42deg, 82%, 73%);
+  text-decoration: underline;
+}
+.contact form a:hover, .contact form a:focus-visible {
+  opacity: 0.7;
+}
+.contact form .send-btn {
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: hsl(42deg, 82%, 73%);
+  margin: 1rem 0;
+  margin-inline: auto;
+  width: fit-content;
+  padding: 0 1.5rem;
+  background: none;
+  border: hsl(42deg, 82%, 73%) 2px solid;
+  border-radius: 100vmax;
+  transition: background 0.3s ease;
+}
+.contact form .send-btn:hover, .contact form .send-btn:focus-visible {
+  background: hsl(42deg, 82%, 73%);
+  color: hsl(352deg, 77%, 20%);
+}
+.contact form label {
+  margin: 1rem 0 0 0;
+}
+
+.left-adress {
+  display: flex;
+  align-items: center;
+}
+
+.welcome {
+  text-align: center;
+  font-family: "Handlee", cursive;
+  color: hsl(42deg, 60%, 65%);
+  font-size: 2.5rem;
+}
+
+.main-text {
+  text-align: center;
+  font-size: 1.25rem;
+  color: hsl(42deg, 60%, 65%);
+}
+
+.end {
+  font-family: "Handlee", cursive;
+  font-size: 1rem;
+}
+
+footer {
+  margin-top: auto;
+  color: hsl(42deg, 60%, 65%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(352deg, 77%, 39%);
+  padding: 1.5rem;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.footer-content {
+  display: flex;
+  gap: 1rem;
+}
+.footer-content li a {
+  color: hsl(42deg, 60%, 65%);
+}
+
+.link-container {
+  display: none;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    visibility: visible;
+  }
+}
+.burger-sleep {
+  transform: rotate(90deg);
+}
+
+.active-sidebar {
+  display: block;
+  visibility: visible;
+  position: absolute;
+  width: 100%;
+  background-color: hsl(352deg, 77%, 39%);
+  top: 73.85px;
+  right: 0;
+  padding: 1rem 4rem;
+  transform: translateX(0%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.active-items {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .main-text {
+    width: 35ch;
+  }
+  .link-container {
+    display: block;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+  .container {
+    max-width: 1336.6px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .sub-container {
+    min-width: 1336.6px;
+    margin-inline: auto;
+    align-items: center;
+  }
+  .sub-container .opening-container {
+    gap: 10rem;
+  }
+  .contact {
+    min-width: 1336.6px;
+    margin-inline: auto;
+  }
+  .left {
+    text-align: left;
+  }
+  .main-text {
+    text-align: left;
+  }
+  .speisekarte {
+    display: none;
+    visibility: hidden;
+  }
+}

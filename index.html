@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>il-forno Schweich</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="" />
+    <link rel="icon" href="./assets/pizza-slice-solid.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <img
+          class="logo"
+          src="./assets/Logo_il_forno_final_ohne_Hintergrund.png"
+          alt="Ilforno"
+        />
+        <i class="fa-solid fa-bars hamburger" tabindex="0"></i>
+        <div class="link-container">
+          <ul class="links">
+            <li><a href="#left" class="link">Home</a></li>
+            <li class="speisekarte">
+              <a href="#speisekarte" class="link">Speisekarte</a>
+            </li>
+            <li><a href="#öffnungszeiten" class="link">Öffnungszeiten</a></li>
+            <li><a href="#kontakt" class="link">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left" id="left">
+        <span class="welcome">Herzlich Willkommen!</span>
+        <p class="main-text">
+          Hier auf unserer Website und auch in unserem Ristorante in Schweich.
+          Wir bieten Ihnen original italienische Küche. Die hausgemachte Pizza
+          aus dem Steinbackofen gehört zu unseren Spezialitäten. Darüber hinaus
+          bieten wir weitere Speisen nach italienischen Original-Rezepten an.
+          Genießen Sie das mediterrane Flair unseres Lokals. Wir freuen uns auf
+          Ihren Besuch!
+        </p>
+        <span class="main-text end">Ihre Familie Shalah</span>
+      </div>
+      <div class="right-welcome" id="speisekarte">
+        <a
+          href="http://www.il-forno-schweich.de/img/il_forno_Speisekarte.pdf"
+          target="_blank"
+          ><img class="bg-image" src="./assets/background.png" alt=""
+        /></a>
+        <a
+          href="http://www.il-forno-schweich.de/img/il_forno_Speisekarte.pdf"
+          target="_blank"
+          class="menu"
+          >Unsere Speisekarte</a
+        >
+      </div>
+    </div>
+    <div class="sub-container" id="öffnungszeiten">
+      <span class="headline">Öffnungszeiten</span>
+      <div class="opening-container">
+        <div class="left-adress">
+          <ul>
+            <li><span>Brückenstr. 17</span></li>
+            <li><span>54338 Schweich</span></li>
+          </ul>
+        </div>
+        <div class="right">
+          <ul class="days">
+            <li>Täglich</li>
+            <li>11.30 - 14.00 Uhr</li>
+            <li>17.30 - 22.30 Uhr</li>
+            <li>Mittwoch ist Ruhetag!</li>
+          </ul>
+          <!-- <span class="rest-day">Mittwoch ist Ruhetag!</span> -->
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="kontakt">
+      <span>Kontakiere Uns!</span>
+      <form action="#" method="post">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" />
+        <label for="msg">Nachricht</label>
+        <textarea name="msg" id="msg" rows="5"></textarea>
+        <a href="#">Telefon: 06502 - 40 34 20 1</a>
+        <a href="https://www.facebook.com/FamilieShala/" target="_blank"
+          >Unser Facebook</a
+        >
+        <button type="button" class="send-btn">Senden</button>
+      </form>
+    </div>
+    <footer>
+      <span>Ariiio &copy; 2022</span>
+      <ul class="footer-content">
+        <li>
+          <a href="#">Impressum</a>
+        </li>
+        <li>
+          <a href="#">Datenschutz</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
